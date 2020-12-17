@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="REST-JAVA-demo" />
+        <module name="WebSocket-JAVA-demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Futures-Java-demo" target="1.7" />
+      <module name="REST-JAVA-demo" target="1.8" />
+      <module name="WebSocket-JAVA-demo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="REST-JAVA-demo" options="-parameters" />
+      <module name="WebSocket-JAVA-demo" options="-parameters" />
+    </option>
+  </component>
+</project>

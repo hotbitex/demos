@@ -1,0 +1,21 @@
+{
+  "name": "for_arnold",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "main": "node ./main.js"
+  },
+  "author": "AdamLaw",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "crypto": "^1.0.1",
+    "fs": "0.0.1-security",
+    "log4js": "^6.3.0",
+    "util": "^0.12.2",
+    "ws": "^7.4.1",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {}
+}
