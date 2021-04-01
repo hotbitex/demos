@@ -8,7 +8,7 @@ namespace HotbitApi.Utility
     public class HotBitRestCommand
     {
         public static  Dictionary<string, string> Dict { get; set; }
-        public static  string RestfulUrl = "https://api.hotbit.io/api/v2/";
+        public static  string RestfulUrl = "https://api.hotbit.io/v2/";
         static HotBitRestCommand()
         {
             Dict = new Dictionary<string, string>();

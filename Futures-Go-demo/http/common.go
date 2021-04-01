@@ -7,7 +7,7 @@ import (
 
 // 获取交易对列表
 func GetSymbols() string {
-    pathUrl := "/api/v2/market.list"
+    pathUrl := "/p1/market.list"
     strUrl := config.API_URL + pathUrl
     jsonReturn := utils.HttpGetRequest(strUrl)
     return jsonReturn

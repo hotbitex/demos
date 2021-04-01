@@ -8,7 +8,7 @@ import (
 
 // 获取账户余额
 func GetBalance(symbol ...string) string {
-    pathUrl := "/api/v2/balance.query"
+    pathUrl := "/p2/balance.query"
     symbols := make([]string,0)
     for _, v := range symbol {
         symbols = append(symbols, v)
@@ -30,7 +30,7 @@ func GetBalance(symbol ...string) string {
 
 // 下单接口
 func PlaceOrder(symbol,side,amount,price,isFee string) string {
-    pathUrl := "/api/v2/order.put_limit"
+    pathUrl := "/p2/order.put_limit"
     strRequest := config.API_URL + pathUrl
     params :=make(map[string]string)
     params["market"] = symbol

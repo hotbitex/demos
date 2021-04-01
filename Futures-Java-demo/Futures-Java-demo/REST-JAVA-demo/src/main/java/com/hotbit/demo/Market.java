@@ -42,7 +42,7 @@ public class Market {
 
 
     public void GetSymbol()  {
-        String pathUrl = "/api/v2/market.list";
+        String pathUrl = "/p1/market.list";
         String strUrl = apiUri + pathUrl;
 
         String resp = HttpClient.getInstance().doGet(strUrl,null);
@@ -51,7 +51,7 @@ public class Market {
 
     // 查询余额
     public void GetBalance() {
-        String pathUrl = "/api/v2/balance.query";
+        String pathUrl = "/p2/balance.query";
         String strUrl = apiUri + pathUrl;
         JSONArray symbols = new JSONArray();
         symbols.add("BTC");
@@ -67,7 +67,7 @@ public class Market {
 
     // 下单接口
     public void PutOrder() {
-        String pathUrl = "/api/v2/order.put_limit";
+        String pathUrl = "/p2/order.put_limit";
         String strUrl = apiUri + pathUrl;
         Map<String, String> params = new HashMap<>();
         params.put("market","ETHBTC");

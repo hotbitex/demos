@@ -25,7 +25,7 @@ class ApiRequest
 	*/
 	// 获取交易对列表
 	function get_common_symbols() {
-		$this->api_method = "/api/v2/market.list";
+		$this->api_method = "/p1/market.list";
 		$this->req_method = 'GET';
 		$param = [];
 		$url = $this->create_sign_url($param);
@@ -39,7 +39,7 @@ class ApiRequest
 	*/
 	// 下单
 	function place_order($market = '',$side = 1,$amount = 0,$price = 0,$isfee = 0) {
-		$this->api_method = "/api/v2/order.put_limit";
+		$this->api_method = "/p2/order.put_limit";
 		$this->req_method = 'POST';
 		$param = [
 			'market' => $market,
@@ -57,7 +57,7 @@ class ApiRequest
 
 	// 获取账户余额
 	function get_balance($assets = []) {
-		$this->api_method = "/api/v2/balance.query";
+		$this->api_method = "/p2/balance.query";
 		$this->req_method = 'POST';
 		$param = [
 			'assets' =>json_encode($assets),
